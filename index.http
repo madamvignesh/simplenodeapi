@@ -1,0 +1,30 @@
+GET http://localhost:3000
+
+
+### Get all tasks
+GET http://localhost:3000/tasks
+
+### Get all tasks with pagination
+GET http://localhost:3000/tasks?page=1
+
+### Create a new task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "name": "Get Milk",
+    "description": "buy the milk from the store",
+    "status": "In Progress"
+}
+
+### Update a task
+PUT http://localhost:3000/tasks/7cf604e0-532a-48f5-914b-09070933f12f
+Content-Type: application/json
+
+{
+    "status": "Failed"
+}
+
+### Delete a task
+DELETE http://localhost:3000/tasks/7cf604e0-532a-48f5-914b-09070933f12f
+
